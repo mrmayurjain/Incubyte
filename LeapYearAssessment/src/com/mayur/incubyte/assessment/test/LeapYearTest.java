@@ -115,7 +115,7 @@ class LeapYearTest {
 		
 		int year = 2010;
 		boolean isLeapYear = leapYearAssessment.isLeapYear(year);
-		if(!isLeapYear) {
+		if(isLeapYear) {
 			fail("Test Case 'allDividedByFourAndNotByHundred3' has failed");
 		}	
 		
