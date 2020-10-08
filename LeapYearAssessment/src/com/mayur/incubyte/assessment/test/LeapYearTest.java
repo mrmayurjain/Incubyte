@@ -81,5 +81,56 @@ class LeapYearTest {
 		}	
 		
 	}
+	
+	@Test
+	void allDividedByFourAndNotByHundred1() {		
+		
+		LeapYearAssessment leapYearAssessment = new LeapYearAssessment();
+		
+		int year = 2008;
+		boolean isLeapYear = leapYearAssessment.isLeapYear(year);
+		if(!isLeapYear) {
+			fail("Test Case 'allDividedByFourAndNotByHundred1' has failed");
+		}	
+		
+	}
+	
+	@Test
+	void allDividedByFourAndNotByHundred2() {		
+		
+		LeapYearAssessment leapYearAssessment = new LeapYearAssessment();
+		
+		int year = 2012;
+		boolean isLeapYear = leapYearAssessment.isLeapYear(year);
+		if(!isLeapYear) {
+			fail("Test Case 'allDividedByFourAndNotByHundred2' has failed");
+		}	
+		
+	}
+	
+	@Test
+	void allDividedByFourAndNotByHundred3() {		
+		
+		LeapYearAssessment leapYearAssessment = new LeapYearAssessment();
+		
+		int year = 2010;
+		boolean isLeapYear = leapYearAssessment.isLeapYear(year);
+		if(!isLeapYear) {
+			fail("Test Case 'allDividedByFourAndNotByHundred3' has failed");
+		}	
+		
+	}
+	@Test
+	void allDividedByFourAndNotByHundred4() {		
+		
+		LeapYearAssessment leapYearAssessment = new LeapYearAssessment();
+		
+		int year = 2016;
+		boolean isLeapYear = leapYearAssessment.isLeapYear(year);
+		if(!isLeapYear) {
+			fail("Test Case 'allDividedByFourAndNotByHundred4' has failed");
+		}	
+		
+	}
 
 }
