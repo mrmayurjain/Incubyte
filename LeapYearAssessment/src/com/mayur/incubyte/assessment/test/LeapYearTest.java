@@ -132,5 +132,43 @@ class LeapYearTest {
 		}	
 		
 	}
-
+	
+	@Test
+	void allNotDividedByFour1() {		
+		
+		LeapYearAssessment leapYearAssessment = new LeapYearAssessment();
+		
+		int year = 2017;
+		boolean isLeapYear = leapYearAssessment.isLeapYear(year);
+		if(isLeapYear) {
+			fail("Test Case 'allDividedByFourAndNotByHundred4' has failed");
+		}	
+		
+	}
+	
+	@Test
+	void allNotDividedByFour2() {		
+		
+		LeapYearAssessment leapYearAssessment = new LeapYearAssessment();
+		
+		int year = 2018;
+		boolean isLeapYear = leapYearAssessment.isLeapYear(year);
+		if(isLeapYear) {
+			fail("Test Case 'allDividedByFourAndNotByHundred4' has failed");
+		}	
+		
+	}
+	
+	@Test
+	void allNotDividedByFour3() {		
+		
+		LeapYearAssessment leapYearAssessment = new LeapYearAssessment();
+		
+		int year = 2019;
+		boolean isLeapYear = leapYearAssessment.isLeapYear(year);
+		if(isLeapYear) {
+			fail("Test Case 'allDividedByFourAndNotByHundred4' has failed");
+		}			
+	}
+	
 }
