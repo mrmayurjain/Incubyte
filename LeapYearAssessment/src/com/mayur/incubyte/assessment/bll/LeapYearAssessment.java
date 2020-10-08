@@ -7,6 +7,9 @@ public class LeapYearAssessment {
 	private static final int FOUR = 4; 
 
 	public boolean isLeapYear(int year) {
+		if(year % FOUR != 0) {
+			return false;
+		}
 		if(year % FOUR == 0 && year % HUNDRED !=0) {
 			return true;
 		}
